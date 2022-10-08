@@ -26,5 +26,5 @@ let handler = async (m, { text }) => {
 handler.help = ['', 'earch'].map(v => 'yts' + v + ' <pencarian>')
 handler.tags = ['tools']
 handler.command = /^yts(earch)?$/i
-
+handler.limit = true
 export default handler

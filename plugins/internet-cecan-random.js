@@ -13,5 +13,5 @@ handler.help = ['cecanrandom']
 handler.tags = ['internet']
 handler.limit = false
 handler.command = /^(cecanrandom)$/i
-
+hander.limit = true
 export default handler

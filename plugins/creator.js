@@ -7,23 +7,38 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //------- NOMOR
   let nowner = `${nomorown.split`@`[0]}@s.whatsapp.net`
   let teksnomor = `
-ㅤ╾ִ⊰ֹ ✣ ֹ⃝🪄⃝̷̸۪۪۪    ⋄ֹ 𖨂 ּ @${nomorown.split`@`[0]}  ּ 𝇓 ۪ ִ⢾ֹ  ✿ֹ  ⊱ִ╼۫۫
+ɴᴏᴍᴏʀ ᴏᴡɴᴇʀ ʙᴏᴛ
+
+ʀᴜʟʟ:
+@${nomorown.split`@`[0]}
+ᴄʟᴇᴏ:
+@${nomorown2.split`@`[0]}
+
+ʀᴜʟᴇs:
+ᴊᴀɴɢᴀɴ ᴄʜᴀᴛ ᴀɴᴇʜ ᴀɴᴇʜ ᴋᴇ ᴏᴡɴᴇʀ ʙᴏᴛ
+ᴊᴀɴɢᴀɴ sᴘᴀᴍ ᴋᴇ ᴏᴡɴᴇʀ ʙᴏᴛ
+ᴊᴀɴɢᴀɴ ᴄᴀʟʟ ᴏᴡɴᴇʀ ʙᴏᴛ
+
+ʀᴜʟᴇs ᴋʜᴜsᴜs:
+ᴀᴡᴀs ᴀᴊᴀ ᴋᴀʟᴀᴜ ʟᴜ ᴄʜᴀᴛ ᴀɴᴇʜ ᴀɴᴇʜ ᴋᴇ ᴄʟᴇᴏ, ɢᴡ ʙʟᴏᴄᴋ ᴘᴇʀᴍᴀɴᴇɴᴛ ʟᴜ
+
+ᴄ ʟ ᴏ ᴜ ᴅ      ʙ ᴏ ᴛ
 `
 
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `No Bio`
-  let teks = 'Pilih dibawah kak ! o(〃＾▽＾〃)o'
+  let teks = 'ᴘɪʟɪʜ ᴅɪ ʙᴀᴡᴀʜ'
 const sections = [
    {
-	title: `░ ⃞ׄ🪄 Owner  !! ⥽`,
+	title: `░ ⃞ׄ🪄 ᴏᴡɴᴇʀ  !! ⥽`,
 	rows: [
-	    {title: "📱 • Nomor Owner", rowId: ".owner nomor"},
+	    {title: "ɴᴏᴍᴏʀ ᴏᴡɴᴇʀ", rowId: ".owner nomor"},
 	]
     },{
 	title: `░ ⃞ׄ🪄 Support  !! ⥽`,
 	rows: [
-	    {title: "💸 • Donasi", rowId: ".owner nomor"},
+	    {title: "ᴅᴏɴᴀsɪ", rowId: ".owner nomor"},
 	]
   },
 ]
@@ -31,8 +46,8 @@ const sections = [
 const listMessage = {
   text: teks,
   footer: null,
-  title: `${htki} *Creator* ${htka}`,
-  buttonText: "Klik disini !",
+  title: `${htki} *ᴄʀᴇᴀᴛᴏʀ* ${htka}`,
+  buttonText: "ᴄʟɪᴄᴋ !",
   sections
 }
 

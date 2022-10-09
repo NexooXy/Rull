@@ -1,4 +1,4 @@
-
+*/
 let nowner1 = `${nomorown1.split`@`[0]}@s.whatsapp.net`
   let nowner2 = `${nomorown2.split`@`[0]}@s.whatsapp.net`
   let teksnomor = `${htki} *OWNER* ${htka}

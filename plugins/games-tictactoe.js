@@ -6,7 +6,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
     let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
     // m.reply('[WIP Feature]')
     if (room) {
-        m.reply('Partner ditemukan!')
+        m.reply('ᴘᴀʀᴛɴᴇʀ ᴛɪᴄ ᴛᴀᴄ ᴛᴏᴇ ᴅɪᴛᴇᴍᴜᴋᴀɴ!')
         room.o = m.chat
         room.game.playerO = m.sender
         room.state = 'PLAYING'
@@ -26,14 +26,16 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
             }[v]
         })
         let str = `
-Room ID: ${room.id}
+ɪᴅ ʀᴏᴏᴍ: ${room.id}
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
-Menunggu @${room.game.currentTurn.split('@')[0]}
-Ketik *nyerah* untuk nyerah
+Mᴇɴᴜɴɢɢᴜ @${room.game.currentTurn.split('@')[0]}
+ᴋᴇᴛɪᴋ ᴀɴɢᴋᴀ 1 sᴀᴍᴘᴀɪ 9 ᴜɴᴛᴜᴋ ʙᴇʀᴍᴀɪɴ
+
+Kᴇᴛɪᴋ *nyerah* ᴜɴᴛᴜᴋ ᴍᴇɴʏᴇʀᴀʜ
 `.trim()
-        if (room.x !== room.o) await conn.sendButton(room.x, str, author, ['Nyerah', 'nyerah'], m, {
+        if (room.x !== room.o) await conn.sendButton(room.x, str, author, ['sᴜʀʀᴇɴᴅ/ᴍᴇɴʏᴇʀᴀʜ', 'nyerah'], m, {
             mentions: conn.parseMention(str)
         })
         await conn.sendButton(room.o, str, author, ['Nyerah', 'nyerah'], m, {
@@ -57,5 +59,5 @@ ${usedPrefix}${command} ${text}` : ''))
 handler.help = ['tictactoe', 'ttt'].map(v => v + ' [custom room name]')
 handler.tags = ['game']
 handler.command = /^(tictactoe|t{3})$/
-
+handler.group = true
 export default handler

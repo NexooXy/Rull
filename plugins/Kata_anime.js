@@ -10,5 +10,5 @@ m.reply(`${indo}\n\n${character}\n${anime}`)
 handler.help = ['katanime']
 handler.tags = ['internet']
 handler.command = /^(katanime|kataanime)$/i
-
+handler.limit = true
 export default handler

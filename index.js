@@ -1,4 +1,4 @@
-console.log('🐾 Starting...')
+console.log('Loading Bang...')
 
 import yargs from 'yargs'
 import cfonts from 'cfonts'
@@ -16,14 +16,17 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const require = createRequire(__dirname) // Bring in the ability to create the 'require' method
 const { name, author } = require(join(__dirname, './package.json')) // https://www.stefanjudis.com/snippets/how-to-import-json-files-in-es-modules-node-js/
 
-say('Bot Whatsapp MD', { font: 'chrome', align: 'center', gradient: ['blue', 'green'] })
-say(`'WH-MODS-BOT-V1' By WH MODS DEV`, { font: 'console', align: 'center', gradient: ['blue', 'green'] })
+say('CloudBot', { font: 'chrome', align: 'center', gradient: ['blue', 'white'] })
+say(`'CloudBot' By Rull`, { font: 'console', align: 'center', gradient: ['blue', 'white'] })
 
 var isRunning = false
 /**
  * Start a js file
  * @param {String} file `path/to/file`
  */
+require("http").createServer((_, res) =>
+ res.end("Uptime!")).listen(8080)
+
 function start(file) {
   if (isRunning) return
   isRunning = true
@@ -32,7 +35,7 @@ function start(file) {
   setupMaster({ exec: args[0], args: args.slice(1) })
   let p = fork()
   p.on('message', data => {
-    console.log('[✅RECEIVED]', data)
+    console.log('[✅DITERIMA]', data)
     switch (data) {
       case 'reset':
         p.process.kill()

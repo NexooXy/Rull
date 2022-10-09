@@ -120,7 +120,7 @@ global.lynk = '-'
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ MEDIA SOSSIAL ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
 global.sig = 'https://instagram.com"'
 global.sgh = 'https://github.com' //github
-global.sgc = '-' //group whatsapp
+global.sgc = 'https://whatsapp.com' //group whatsapp
 global.sdc = '-' //discord
 global.snh = 'https://youtube.com'
 

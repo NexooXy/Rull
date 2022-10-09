@@ -1,4 +1,4 @@
-*/
+/*
 let nowner1 = `${nomorown1.split`@`[0]}@s.whatsapp.net`
   let nowner2 = `${nomorown2.split`@`[0]}@s.whatsapp.net`
   let teksnomor = `${htki} *OWNER* ${htka}
@@ -49,7 +49,7 @@ global.owner = [
 ['6285607831410', 'Rull', true]
 ]
 global.mods = []
-global.prems = []
+global.prems = ['6285607831410','6281949998241']
 global.nomorbot = '6281352848936'
 global.nomorown = '6285607831410'
 global.nomorown1 = '6285607831410'
@@ -62,9 +62,9 @@ global.nomorwa = '0'
 global.readMore = readMore
 global.author = 'Rull'
 global.namebot = '​ Cloud bot'
-global.wm = '© CloudBotz By rull'
-global.media = 'https://telegra.ph/file/5d45a3d1e12726d98c5e4.jpg'
-global.wm = 'CloudBot '
+global.wm = '© CloudBotz By Rull'
+global.media = 'https://telegra.ph/file/878419a6d50ac90eb252b.jpg'
+global.wm = 'CloudBot By Rull '
 global.watermark = wm
 global.wm2 = 'Cloud Bot '
 global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
@@ -128,7 +128,7 @@ global.hsquere = ['⛶','❏','⫹⫺']
 
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ RESPOND ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
 global.stiker_wait = '▰▰▰▰▰▰▱▱ 98% 𝚠𝚊𝚒𝚝!!'
-global.wait = '▰▰▰▰▰▰▱▱ 98% 𝚠𝚊𝚒𝚝!!'
+global.wait = '▰▰▰▰▰▰▱▱ 99% 𝚠𝚊𝚒𝚝!!'
 global.eror = 'Mohon Maaf Server Kami Sedang Error!'
 
 

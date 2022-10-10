@@ -11,7 +11,7 @@ async function handler(m, { conn, args }) {
             confirm[m.sender] = {
                 sender: m.sender,
                 count,
-                timeout: setTimeout(() => (m.reply('timed out'), delete confirm[m.sender]), 60000)
+                timeout: setTimeout(() => (m.reply('Time Out'), delete confirm[m.sender]), 60000)
             }
             let txt = `Apakah anda yakin mau melakukan judi (Y/n)\n\n*Taruhan:* ${count} 💹\n⏰ 60s Timeout`
             return conn.sendButton(m.chat, txt, author, null, [['✔️'], ['✖️']], m)
@@ -22,7 +22,7 @@ async function handler(m, { conn, args }) {
             let { timeout } = confirm[m.sender]
             clearTimeout(timeout)
             delete confirm[m.sender]
-            m.reply('Rejected')
+            m.reply('Ditolak')
         }
     }
 }

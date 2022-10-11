@@ -5,14 +5,17 @@ Welcome To Anonymous Chat
 Command:
 #start
 ⟩ untuk memulai anonymous chat
+
 #skip
 ⟩ Untuk skip anonymous chat
+
 #stop
 ⟩ untuk berhenti anonymous chat
+
 #sendkontak
 ⟩ untuk mengirim kontak/nomor ke Anon chat
 
-Rules:
+🎀 Rules:
 Jangan spam
 Jangan di salah gunakan
 Jangan rasis/Toxic

@@ -159,9 +159,10 @@ global.reloadHandler = async function (restatConn) {
   }
   
 let welc = `
-❖━━━[ *𝘾𝙡𝙤𝙪𝙙𝘽𝙤𝙩* ]━━━❖
+「 Welcome Messenge 」
+
 ┏––––––━━━━━━━━•
-│☘︎ @subject
+│》 @subject
 ┣━━━━━━━━┅┅┅
 │( 👋 𝑯𝒂𝒊𝒊 @user
 ├[ *𝑰 𝑵 𝑻 𝑹 𝑶* ]—
@@ -175,8 +176,8 @@ let welc = `
 @desc
 `
 let lef = 
-`❖━━━[ *𝘾𝙡𝙤𝙪𝙙 𝘽𝙤𝙩* ]━━━❖
-𝑺𝒂𝒚𝒐𝒏𝒂𝒓𝒂𝒂 *@user* ✨`
+`「 Remove Messenge 」
+Dadahh *@user* `
 
   conn.welcome = welc
   conn.bye = lef

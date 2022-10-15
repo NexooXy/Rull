@@ -8,7 +8,6 @@ import fetch from 'node-fetch'
 
 const defaultMenu = {
   before: `
-%dash
 %m1 *U S E R*
 %m2 *Name:* %name
 %m2 *Tag:* %tag
@@ -46,10 +45,9 @@ const defaultMenu = {
 %m3
 %readmore
 `.trimStart(),
- before: ` `.trimStart(),
- header: '⃟⃟☰⃟⃟ᭁ═━┈━┈༓ *%category* ',
- body: `┆➨ %cmd %isPremium %islimit`,
- footer: `⃟⃟⃟⃟࿑⃟⃟⃟࿐═┈༓᭄༤\n`,
+  header: '⃝▣──「 %category 」───⬣',
+  body: `${emot} %cmd %isPremium %islimit`,
+  footer: '▣───────────⬣\n',
   after: ``,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {

@@ -263,10 +263,11 @@ let tek = `
 ││▬▭▬▭▬▭▬▭▬▭▬▭▬*
 ││              
 ││ ﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉﹉
-┆┆あ🎀.  Nama: ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-┆┆あ🌙.  Limit: ${usrs.limit}
-┆┆あ📍. Premium: ${usrs.premiumTime > 1 ? 'Iya': 'Tidak'}
+┆┆あ💬.  Nama: ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+┆┆あ🌌.  Limit: ${usrs.limit}
+┆┆あ🌟. Premium: ${usrs.premiumTime > 1 ? 'Iya': 'Tidak'}
 ┆┆あ🌧️. Status: ${m.sender.split`@`[0] == nomorown ? 'Creator' : (usrs.premiumTime >= 1 ? 'User Premium' : 'Gratisan')}
+┆┆あ 📍Pin: Jangan spam ya kak
 ││▬▭▬▭▬▭▬▭▬▭▬▭▬
 `
 const listMessage = {
@@ -274,7 +275,7 @@ const listMessage = {
   footer: '❗ *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner',
   mentions: await conn.parseMention(tek),
   title: `${htki} *List Menu* ${htka}`,
-  buttonText: `Klik disini kak`, 
+  buttonText: `Klik disini 🕳️`, 
   sections
 }
   if (teks == '404') {
